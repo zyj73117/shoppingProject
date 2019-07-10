@@ -75,11 +75,18 @@ public class DataBase {
         goodsClassData.add(new GoodsClass(1003,"手机","sj"));
         goodsClassData.add(new GoodsClass(1004,"玩具","wj"));
         //初始化商品数据
-        goodsData.add(new Goods(100,"SONY电视",29999,1001,10,"1.jpg","SONY",5));
-        goodsData.add(new Goods(101,"Dell G5",6399,1002,10,"1.jpg","SONY",5));
-        goodsData.add(new Goods(102,"Iphone XR",5499,1003,10,"1.jpg","SONY",5));
-        goodsData.add(new Goods(103,"联想电脑",5699,1002,10,"1.jpg","SONY",5));
-        goodsData.add(new Goods(104,"Dell G3",5299,1002,10,"1.jpg","SONY",5));
-        goodsData.add(new Goods(105,"海信电视",4699,1001,10,"1.jpg","SONY",5));
+        goodsData.add(new Goods(100,"索尼 KD-77A9G",59999.00,1001,20,"1.jpg","SONY",0));
+        goodsData.add(new Goods(101,"小米 小米电视4X ",1899.00,1001,1000,"2.jpg","XIAOMI",0));
+        goodsData.add(new Goods(102,"海信 H55E3A",1899.00,1001,1000,"3.jpg","Hisense",0));
+
+        goodsData.add(new Goods(103,"联想 拯救者Y7000P",9299.00,1002,100,"1.jpg","Lenovo",0));
+        goodsData.add(new Goods(104,"华为 MateBook 13",5699.00,1002,100,"1.jpg","HUAWEI",5));
+        goodsData.add(new Goods(105,"Apple 2019 Macbook Pro 13.3",13099.00,1002,100,"1.jpg","Apple",5));
+        goodsData.add(new Goods(106,"戴尔DELL 游匣G3 ",7069.00,1002,100,"1.jpg","DELL",5));
+
+        goodsData.add(new Goods(107,"Iphone XR",5499.00,1003,1000,"1.jpg","Apple",5));
+        goodsData.add(new Goods(108,"华为 P30 Pro",5978.00,1003,1000,"1.jpg","HUAWEI",5));
+        goodsData.add(new Goods(109,"小米8 屏幕指纹版 ",2099.00,1003,1000,"1.jpg","XIAOMI",5));
+
     }
 }

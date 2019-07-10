@@ -118,6 +118,7 @@ public class ShoppingSystem {
         System.out.println("2.我的购物车");
         System.out.println("3.我的订单");
         System.out.println("4.退出系统");
+        System.out.println("请选择:");
         int chooice = sc.nextInt();
         switch (chooice){
             case 1:
@@ -309,8 +310,12 @@ public class ShoppingSystem {
         if(chooice.equals("y")){
             System.out.println("请输入要添加的数量: ");
             int count = sc.nextInt();
-            //添加购物车记录
-            addShoppingCar(goods,count);
+            if (count >= 0 && count <= goods.getStoage()) {
+                //添加购物车记录
+                addShoppingCar(goods, count);
+            }else{
+                System.out.println("库存不足");
+            }
             //返回商品类列表
             showGoodsClass();
         }else if(chooice.equals("n"))
@@ -477,6 +482,8 @@ public class ShoppingSystem {
         try {
             //以文件保存的方式打印购物小票
             FileWriter writer = new FileWriter(loginUser.getUserName()+"购物小票.txt");
+            //记录合计总价
+            double totalPrice = 0;
             //使用FileWrite将订单数据写入文件
             for (Order order: orderList){
                 writer.write("交易时间："+dateUtil.parseDateToString(order.getTradeTime())+"\r\n");
@@ -486,8 +493,12 @@ public class ShoppingSystem {
                 writer.write("价格：￥"+goods.getPrice()+"\r\n");
                 writer.write("数量："+order.getGoodsSum()+"\r\n");
                 writer.write("总价：￥"+order.getGoodsSum()*goods.getPrice()+"\r\n");
+                totalPrice += order.getGoodsSum()*goods.getPrice();
 
+                //减少库存的数量
+                
             }
+            writer.write("合计：￥"+totalPrice);
             //关闭writer数据流
             writer.close();
         } catch (IOException e) {
@@ -499,6 +510,7 @@ public class ShoppingSystem {
      * 查看订单
      */
     public void myOrders(){
+        System.out.println("-----交易订单-----");
         //获取登录人的订单记录
         ArrayList<Order> orderList = data.getOrderData().get(loginUser.getUserId());
         //打印显示登录人的订单数据

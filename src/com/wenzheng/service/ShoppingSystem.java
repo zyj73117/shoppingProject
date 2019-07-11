@@ -306,11 +306,12 @@ public class ShoppingSystem {
         System.out.println("库存："+goods.getStoage());
         System.out.println("是否要加入购物车：（y/n）");
         String chooice = sc.next();
+
         //判断选项
         if(chooice.equals("y")){
             System.out.println("请输入要添加的数量: ");
             int count = sc.nextInt();
-            if (count >= 0 && count <= goods.getStoage()) {
+            if (count > 0 && count <= goods.getStoage()) {
                 //添加购物车记录
                 addShoppingCar(goods, count);
             }else{
@@ -420,6 +421,13 @@ public class ShoppingSystem {
             for (ShoppingCar car: list){
                 //根据购物车中的商品编号获得商品对象
                 Goods goods = getGoods(car.getGoodsId());
+
+                //判断购物车数量是否超过库存
+                if(car.getGoodsNum() > goods.getStoage()){
+                    System.out.println("您购买的数量已经超过库存，已经为你将"+goods.getGoodsName()+"添加到最大数量：" + goods.getStoage() +"件");
+                    car.setGoodsNum(goods.getStoage());
+                }
+
                 //计算商品的总价
                 double price = car.getGoodsNum()*goods.getPrice();
                 //累计合计总价
@@ -496,7 +504,11 @@ public class ShoppingSystem {
                 totalPrice += order.getGoodsSum()*goods.getPrice();
 
                 //减少库存的数量
-                
+                int reduceStoage = goods.getStoage() - order.getGoodsSum();
+                goods.setStoage(reduceStoage);
+                //增加销量
+                int sellCount = order.getGoodsSum();
+                goods.setSellCount((goods.getSellCount()+sellCount));
             }
             writer.write("合计：￥"+totalPrice);
             //关闭writer数据流
@@ -513,14 +525,17 @@ public class ShoppingSystem {
         System.out.println("-----交易订单-----");
         //获取登录人的订单记录
         ArrayList<Order> orderList = data.getOrderData().get(loginUser.getUserId());
-        //打印显示登录人的订单数据
-        for (Order order : orderList){
-            System.out.println("交易时间"+dateUtil.parseDateToString(order.getTradeTime()));
-            //根据商品编号查询商品对象
-            Goods goods = getGoods(order.getGoodsId());
-            System.out.println("商品名称："+goods.getGoodsName()+"\t价格：￥"+goods.getPrice()+"\t数量"+order.getGoodsSum()+"\t总价:￥"+order.getGoodsSum()*goods.getPrice());
+        if(orderList == null ||orderList.size() == 0){
+            System.out.println("订单为空");
+        }else {
+            //打印显示登录人的订单数据
+            for (Order order : orderList) {
+                System.out.println("交易时间" + dateUtil.parseDateToString(order.getTradeTime()));
+                //根据商品编号查询商品对象
+                Goods goods = getGoods(order.getGoodsId());
+                System.out.println("商品名称：" + goods.getGoodsName() + "\t价格：￥" + goods.getPrice() + "\t数量" + order.getGoodsSum() + "\t总价:￥" + order.getGoodsSum() * goods.getPrice());
+            }
         }
-
         //返回主菜单
         mainMenu();
     }

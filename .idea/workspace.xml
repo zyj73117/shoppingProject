@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31a745c0-3b14-48b8-95fb-23e3b4f1edeb" name="Default Changelist" comment="no">
-      <change beforePath="$PROJECT_DIR$/src/com/wenzheng/data/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wenzheng/data/DataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ShoppingProject/com/wenzheng/service/ShoppingSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShoppingProject/com/wenzheng/service/ShoppingSystem.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/wenzheng/service/ShoppingSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wenzheng/service/ShoppingSystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tom购物小票.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tom购物小票.txt" afterDir="false" />
     </list>
@@ -41,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/wenzheng/data/DataBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="92" lean-forward="true" selection-start-line="91" selection-start-column="1" selection-end-line="92" />
+            <state relative-caret-position="-320">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#611#612#0" expanded="true" />
@@ -91,8 +92,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/wenzheng/service/ShoppingSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="498" column="16" selection-start-line="498" selection-start-column="16" selection-end-line="498" selection-end-column="16" />
+            <state relative-caret-position="45">
+              <caret line="542" column="1" lean-forward="true" selection-start-line="542" selection-start-column="1" selection-end-line="542" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,14 +103,18 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tom购物小票.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/wenzheng/pojo/ShoppingCar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+            <state relative-caret-position="220">
+              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -126,8 +131,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/wenzheng/pojo/Goods.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
+            <state relative-caret-position="460">
+              <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -190,8 +195,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,7 +253,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562724336137" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562808746162" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
@@ -323,12 +328,13 @@
       <workItem from="1562460559274" duration="22938000" />
       <workItem from="1562564091466" duration="11501000" />
       <workItem from="1562632981248" duration="19149000" />
-      <workItem from="1562721106100" duration="2949000" />
+      <workItem from="1562721106100" duration="3701000" />
+      <workItem from="1562737610677" duration="7308000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69755000" />
+    <option name="totallyTimeSpent" value="77815000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -341,9 +347,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992928" visible="true" weight="0.1689008" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992928" visible="true" weight="0.17091152" />
       <window_info id="Structure" order="1" sideWeight="0.5007072" side_tool="true" weight="0.19168901" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -352,7 +357,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.5878187" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.7705383" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -432,6 +437,8 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/eval [D$[D()[D[Dssh-agent -s).pub" />
+    <entry file="file://$PROJECT_DIR$/eval [D$[D()[D[Dssh-agent -s)" />
     <entry file="file://$PROJECT_DIR$/src/com/wenzheng/pojo/MainClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="940">
@@ -453,13 +460,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wenzheng/pojo/ShoppingCar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wenzheng/pojo/GoodsClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
@@ -469,21 +469,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wenzheng/pojo/Goods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
+        <state relative-caret-position="460">
+          <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eval [D$[D()[D[Dssh-agent -s).pub">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eval [D$[D()[D[Dssh-agent -s)">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wenzheng/data/DataBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="92" lean-forward="true" selection-start-line="91" selection-start-column="1" selection-end-line="92" />
+        <state relative-caret-position="-320">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#611#612#0" expanded="true" />
@@ -510,13 +504,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wenzheng/pojo/ShoppingCar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tom购物小票.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wenzheng/service/ShoppingSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="498" column="16" selection-start-line="498" selection-start-column="16" selection-end-line="498" selection-end-column="16" />
+        <state relative-caret-position="45">
+          <caret line="542" column="1" lean-forward="true" selection-start-line="542" selection-start-column="1" selection-end-line="542" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
